@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="boojum" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 360 360" enable-background="new 0 0 360 360" xml:space="preserve">
+<g>
+    <!-- 1st -->
+    <polygon class="p01" points="60,0 0,0 0,60"/>
+    <polygon class="p02" points="0,60 60,60 60,0"/>
+    <polygon class="p03" points="120,0 60,0 60,60"/>
+    <polygon class="p04" points="60,60 120,60 120,0"/>
+	<polygon class="p05" points="180,0 120,0 120,60"/>
+    <polygon class="p06" points="120,60 180,60 180,0"/>
+    <polygon class="p07" points="240,0 180,0 180,60"/>
+    <polygon class="p08" points="180,60 240,60 240,0"/>
+	<polygon class="p09" points="300,0 240,0 240,60"/>
+    <polygon class="p10" points="240,60 300,60 300,0"/>
+    <polygon class="p11" points="360,0 300,0 300,60"/>
+    <polygon class="p12" points="300,60 360,60 360,0"/>
+    <!-- 2nd -->
+    <polygon class="p13" points="60,60 0,60 0,120"/>
+    <polygon class="p14" points="0,120 60,120 60,60"/>
+	<polygon class="p15" points="120,60 60,60 60,120"/>
+    <polygon class="p16" points="60,120 120,120 120,60"/>
+    <polygon class="p17" points="180,60 120,60 120,120"/>
+    <polygon class="p18" points="120,120 180,120 180,60"/>
+    <polygon class="p19" points="240,60 180,60 180,120"/>
+    <polygon class="p20" points="180,120 240,120 240,60"/>
+    <polygon class="p21" points="300,60 240,60 240,120"/>
+    <polygon class="p22" points="240,120 300,120 300,60"/>
+    <polygon class="p23" points="360,60 300,60 300,120"/>
+    <polygon class="p24" points="300,120 360,120 360,60"/>
+    <!-- 3rd -->
+    <polygon class="p25" points="60,120 0,120 0,180"/>
+    <polygon class="p26" points="0,180 60,180 60,120"/>
+    <polygon class="p27" points="120,120 60,120 60,180"/>
+    <polygon class="p28" points="60,180 120,180 120,120"/>
+    <polygon class="p29" points="180,120 120,120 120,180"/>
+    <polygon class="p30" points="120,180 180,180 180,120"/>
+    <polygon class="p31" points="240,120 180,120 180,180"/>
+    <polygon class="p32" points="180,180 240,180 240,120"/>
+    <polygon class="p33" points="300,120 240,120 240,180"/>
+	<polygon class="p34" points="240,180 300,180 300,120"/>
+	<polygon class="p35" points="360,120 300,120 300,180"/>
+	<polygon class="p36" points="300,180 360,180 360,120"/>
+    <!-- 4th -->
+    <polygon class="p37" points="60,180 0,180 0,240"/>
+    <polygon class="p38" points="0,240 60,240 60,180"/>
+	<polygon class="p39" points="120,180 60,180 60,240"/>
+	<polygon class="p40" points="60,240 120,240 120,180"/>
+	<polygon class="p41" points="180,180 120,180 120,240"/>
+    <polygon class="p42" points="120,240 180,240 180,180"/>
+    <polygon class="p43" points="240,180 180,180 180,240"/>
+	<polygon class="p44" points="180,240 240,240 240,180"/>
+    <polygon class="p45" points="300,180 240,180 240,240"/>
+	<polygon class="p46" points="240,240 300,240 300,180"/>
+	<polygon class="p47" points="360,180 300,180 300,240"/>
+	<polygon class="p48" points="300,240 360,240 360,180"/>
+    <!-- 5th -->
+    <polygon class="p49" points="60,240 0,240 0,300"/>
+    <polygon class="p50" points="0,300 60,300 60,240"/>
+    <polygon class="p51" points="120,240 60,240 60,300"/>
+    <polygon class="p52" points="60,300 120,300 120,240"/>
+    <polygon class="p53" points="180,240 120,240 120,300"/>
+	<polygon class="p54" points="120,300 180,300 180,240"/>
+	<polygon class="p55" points="240,240 180,240 180,300"/>
+	<polygon class="p56" points="180,300 240,300 240,240"/>
+    <polygon class="p57" points="300,240 240,240 240,300"/>
+	<polygon class="p58" points="240,300 300,300 300,240"/>
+    <polygon class="p59" points="360,240 300,240 300,300"/>
+	<polygon class="p60" points="300,300 360,300 360,240"/>
+    <!-- 6th -->
+	<polygon class="p61" points="60,300 0,300 0,360"/>
+    <polygon class="p62" points="0,360 60,360 60,300"/>
+    <polygon class="p63" points="120,300 60,300 60,360"/>
+	<polygon class="p64" points="60,360 120,360 120,300"/>
+    <polygon class="p65" points="180,300 120,300 120,360"/>
+	<polygon class="p66" points="120,360 180,360 180,300"/>
+    <polygon class="p67" points="240,300 180,300 180,360"/>
+	<polygon class="p68" points="180,360 240,360 240,300"/>
+    <polygon class="p69" points="300,300 240,300 240,360"/>
+	<polygon class="p70" points="240,360 300,360 300,300"/>
+    <polygon class="p71" points="360,300 300,300 300,360"/>
+	<polygon class="p72" points="300,360 360,360 360,300"/>
+</g>
+</svg>
