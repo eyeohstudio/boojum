@@ -1,6 +1,6 @@
 # boojum
 
 > In the midst of the word he was trying to say,
-> In the midst of his laughter and glee,
-> He had softly and suddenly vanished away—-
-> For the Snark was a Boojum, you see.
+In the midst of his laughter and glee,
+He had softly and suddenly vanished away—
+For the Snark was a Boojum, you see.
