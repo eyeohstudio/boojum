@@ -6,13 +6,13 @@
 ////////////////////////////////////////////////////////////////
 
 ::selection {
-    background-color: @white;
-    color: @black;
+    background-color: @black;
+    color: @white;
 }
 
 ::-moz-selection {
-    background-color: @white;
-    color: @black;
+    background-color: @black;
+    color: @white;
 }
 
 ////////////////////////////////////////////////////////////////
@@ -34,12 +34,56 @@ html {
 	// BEGIN OF: body
 	
 	body {
-        .full-height;
         .font-family-base; .normal;
         .font-size(1.6);
+        .full-height;
 		background-color: @white;
         color: @black;
+        position: relative;
         overflow: auto;
+        
+        object {
+            position: absolute;
+        }
+        
+        object[data="0101-0110.svg"] { top: 60px; left: 60px; }
+        object[data="0921-0931.svg"] { top: 60px; left: 60px; }
+        
+        object[data="0111-0120.svg"] { top: 60px; right: 60px; }
+        object[data="0121-0131.svg"] { top: 60px; right: 60px; }
+        object[data="0201-0210.svg"] { top: 60px; right: 60px; }
+        object[data="0211-0220.svg"] { top: 60px; right: 60px; }
+        object[data="0221-0231.svg"] { top: 60px; right: 60px; }
+        object[data="0301-0310.svg"] { top: 60px; right: 60px; }
+        object[data="0311-0320.svg"] { top: 60px; right: 60px; }
+        object[data="0321-0331.svg"] { top: 60px; right: 60px; }
+        object[data="0701-0710.svg"] { top: 60px; right: 60px; }
+        object[data="0711-0720.svg"] { top: 60px; right: 60px; }
+        object[data="0721-0731.svg"] { top: 60px; right: 60px; }
+        object[data="0801-0810.svg"] { top: 60px; right: 60px; }
+        object[data="0811-0820.svg"] { top: 60px; right: 60px; }
+        object[data="0821-0831.svg"] { top: 60px; right: 60px; }
+        object[data="0901-0910.svg"] { top: 60px; right: 60px; }
+        object[data="0911-0920.svg"] { top: 60px; right: 60px; }
+        
+        object[data="0421-0431.svg"] { bottom: 60px; left: 60px; }
+        object[data="0501-0510.svg"] { bottom: 60px; left: 60px; }
+        object[data="0511-0520.svg"] { bottom: 60px; left: 60px; }
+        object[data="0521-0531.svg"] { bottom: 60px; left: 60px; }
+        object[data="0601-0610.svg"] { bottom: 60px; left: 60px; }
+        object[data="0611-0620.svg"] { bottom: 60px; left: 60px; }
+        object[data="0621-0631.svg"] { bottom: 60px; left: 60px; }
+        object[data="1001-1010.svg"] { bottom: 60px; left: 60px; }
+        object[data="1011-1020.svg"] { bottom: 60px; left: 60px; }
+        object[data="1021-1031.svg"] { bottom: 60px; left: 60px; }
+        object[data="1101-1110.svg"] { bottom: 60px; left: 60px; }
+        object[data="1111-1120.svg"] { bottom: 60px; left: 60px; }
+        object[data="1121-1131.svg"] { bottom: 60px; left: 60px; }
+        object[data="1201-1210.svg"] { bottom: 60px; left: 60px; }
+        object[data="1211-1220.svg"] { bottom: 60px; left: 60px; }
+        
+        object[data="0401-0410.svg"] { bottom: 60px; right: 60px; }
+        object[data="1221-1231.svg"] { bottom: 60px; right: 60px; }
 	}
 	
 	////////////////////////////////////////////////////////////////
