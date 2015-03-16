@@ -210,6 +210,10 @@ html body object[data="0911-0920.svg"] {
   top: 60px;
   right: 60px;
 }
+html body object[data="0411-0420.svg"] {
+  bottom: 60px;
+  left: 60px;
+}
 html body object[data="0421-0431.svg"] {
   bottom: 60px;
   left: 60px;
@@ -277,4 +281,7 @@ html body object[data="0401-0410.svg"] {
 html body object[data="1221-1231.svg"] {
   bottom: 60px;
   right: 60px;
+}
+html body .error {
+  margin: 60px;
 }
