@@ -1,28 +1,13 @@
 @import url('fonts.less');
 
 @black: #000000;
-@color: #333333;
-@hue: #666666;
+@color: #333333; // default value
+@hue: #666666; // default value
 @white: #ffffff;
 
-//.color { stroke: @color; fill: @color; }
-//.hue { stroke: @hue; fill: @hue; }
-.white { stroke: @white; fill: @white; }
-
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-
-::selection {
-    background-color: @black;
-    color: @white;
-}
-
-::-moz-selection {
-    background-color: @black;
-    color: @white;
-}
+.color { fill: @color; stroke: @color; }
+.hue { fill: @hue; stroke: @hue; opacity: .64; stroke-opacity: 0; }
+.white { fill: @white; stroke: @white; }
 
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
@@ -51,49 +36,51 @@ html {
         position: relative;
         overflow: auto;
                 
-        object {
+        #svgObject svg {
+            height: 360px;
             position: absolute;
+            width: 360px;
         }
         
-        object[data="objects/0101-0110.svg"] { top: 60px; left: 60px; }
-        object[data="objects/0921-0931.svg"] { top: 60px; left: 60px; }
+        #object-0101-0110 { top: 60px; left: 60px; }
+        #object-0921-0931 { top: 60px; left: 60px; }
         
-        object[data="objects/0111-0120.svg"] { top: 60px; right: 60px; }
-        object[data="objects/0121-0131.svg"] { top: 60px; right: 60px; }
-        object[data="objects/0201-0210.svg"] { top: 60px; right: 60px; }
-        object[data="objects/0211-0220.svg"] { top: 60px; right: 60px; }
-        object[data="objects/0221-0231.svg"] { top: 60px; right: 60px; }
-        object[data="objects/0301-0310.svg"] { top: 60px; right: 60px; }
-        object[data="objects/0311-0320.svg"] { top: 60px; right: 60px; }
-        object[data="objects/0321-0331.svg"] { top: 60px; right: 60px; }
-        object[data="objects/0701-0710.svg"] { top: 60px; right: 60px; }
-        object[data="objects/0711-0720.svg"] { top: 60px; right: 60px; }
-        object[data="objects/0721-0731.svg"] { top: 60px; right: 60px; }
-        object[data="objects/0801-0810.svg"] { top: 60px; right: 60px; }
-        object[data="objects/0811-0820.svg"] { top: 60px; right: 60px; }
-        object[data="objects/0821-0831.svg"] { top: 60px; right: 60px; }
-        object[data="objects/0901-0910.svg"] { top: 60px; right: 60px; }
-        object[data="objects/0911-0920.svg"] { top: 60px; right: 60px; }
+        #object-0111-0120 { top: 60px; right: 60px; }
+        #object-0121-0131 { top: 60px; right: 60px; }
+        #object-0201-0210 { top: 60px; right: 60px; }
+        #object-0211-0220 { top: 60px; right: 60px; }
+        #object-0221-0231 { top: 60px; right: 60px; }
+        #object-0301-0310 { top: 60px; right: 60px; }
+        #object-0311-0320 { top: 60px; right: 60px; }
+        #object-0321-0331 { top: 60px; right: 60px; }
+        #object-0701-0710 { top: 60px; right: 60px; }
+        #object-0711-0720 { top: 60px; right: 60px; }
+        #object-0721-0731 { top: 60px; right: 60px; }
+        #object-0801-0810 { top: 60px; right: 60px; }
+        #object-0811-0820 { top: 60px; right: 60px; }
+        #object-0821-0831 { top: 60px; right: 60px; }
+        #object-0901-0910 { top: 60px; right: 60px; }
+        #object-0911-0920 { top: 60px; right: 60px; }
         
-        object[data="objects/0411-0420.svg"] { bottom: 60px; left: 60px; }
-        object[data="objects/0421-0431.svg"] { bottom: 60px; left: 60px; }
-        object[data="objects/0501-0510.svg"] { bottom: 60px; left: 60px; }
-        object[data="objects/0511-0520.svg"] { bottom: 60px; left: 60px; }
-        object[data="objects/0521-0531.svg"] { bottom: 60px; left: 60px; }
-        object[data="objects/0601-0610.svg"] { bottom: 60px; left: 60px; }
-        object[data="objects/0611-0620.svg"] { bottom: 60px; left: 60px; }
-        object[data="objects/0621-0631.svg"] { bottom: 60px; left: 60px; }
-        object[data="objects/1001-1010.svg"] { bottom: 60px; left: 60px; }
-        object[data="objects/1011-1020.svg"] { bottom: 60px; left: 60px; }
-        object[data="objects/1021-1031.svg"] { bottom: 60px; left: 60px; }
-        object[data="objects/1101-1110.svg"] { bottom: 60px; left: 60px; }
-        object[data="objects/1111-1120.svg"] { bottom: 60px; left: 60px; }
-        object[data="objects/1121-1131.svg"] { bottom: 60px; left: 60px; }
-        object[data="objects/1201-1210.svg"] { bottom: 60px; left: 60px; }
-        object[data="objects/1211-1220.svg"] { bottom: 60px; left: 60px; }
+        #object-0411-0420 { bottom: 60px; left: 60px; }
+        #object-0421-0431 { bottom: 60px; left: 60px; }
+        #object-0501-0510 { bottom: 60px; left: 60px; }
+        #object-0511-0520 { bottom: 60px; left: 60px; }
+        #object-0521-0531 { bottom: 60px; left: 60px; }
+        #object-0601-0610 { bottom: 60px; left: 60px; }
+        #object-0611-0620 { bottom: 60px; left: 60px; }
+        #object-0621-0631 { bottom: 60px; left: 60px; }
+        #object-1001-1010 { bottom: 60px; left: 60px; }
+        #object-1011-1020 { bottom: 60px; left: 60px; }
+        #object-1021-1031 { bottom: 60px; left: 60px; }
+        #object-1101-1110 { bottom: 60px; left: 60px; }
+        #object-1111-1120 { bottom: 60px; left: 60px; }
+        #object-1121-1131 { bottom: 60px; left: 60px; }
+        #object-1201-1210 { bottom: 60px; left: 60px; }
+        #object-1211-1220 { bottom: 60px; left: 60px; }
         
-        object[data="objects/0401-0410.svg"] { bottom: 60px; right: 60px; }
-        object[data="objects/1221-1231.svg"] { bottom: 60px; right: 60px; }
+        #object-0401-0410 { bottom: 60px; right: 60px; }
+        #object-1221-1231 { bottom: 60px; right: 60px; }
         
         .error { margin: 60px; }
 	}
@@ -107,6 +94,24 @@ html {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 // END OF: html
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
+/* http://keith-wood.name/svg.html
+   SVG for jQuery v1.5.0.
+   Written by Keith Wood (kbwood{at}iinet.com.au) August 2007. */
+
+svg\:svg {
+    display: none;
+}
+
+.svg_error {
+	color: red;
+	font-weight: bold;
+}
 
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
