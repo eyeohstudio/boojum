@@ -20,52 +20,52 @@ jQuery(document).ready(function ($) {
     
     //
     var keyword = getUrlParameter('keyword').slice(0,1);
-    var commonStyles = 'opacity: .4; stroke-opacity: 0;';
+    var commonStyles = '.hue { opacity: .4; stroke-opacity: 0; } .white { fill: #ffffff; stroke: #ffffff; }';
     
     //
     function addColor(svg) {
         
-             if (keyword === '0') { svg.style('.color { fill: #ffe875; stroke: #ffe875; } .hue { fill: #ffe875; stroke: #ffe875; ' + commonStyles + ' }'); }
-        else if (keyword === '1') { svg.style('.color { fill: #ffd378; stroke: #ffd378; } .hue { fill: #ffd378; stroke: #ffd378; ' + commonStyles + ' }'); }
-        else if (keyword === '2') { svg.style('.color { fill: #ffc187; stroke: #ffc187; } .hue { fill: #ffc187; stroke: #ffc187; ' + commonStyles + ' }'); }
-        else if (keyword === '3') { svg.style('.color { fill: #ffb7ae; stroke: #ffb7ae; } .hue { fill: #ffb7ae; stroke: #ffb7ae; ' + commonStyles + ' }'); }
-        else if (keyword === '4') { svg.style('.color { fill: #ff9c76; stroke: #ff9c76; } .hue { fill: #ff9c76; stroke: #ff9c76; ' + commonStyles + ' }'); }
-        else if (keyword === '5') { svg.style('.color { fill: #eac4be; stroke: #eac4be; } .hue { fill: #eac4be; stroke: #eac4be; ' + commonStyles + ' }'); }
+             if (keyword === '0') { svg.style('.color { fill: #ffe875; stroke: #ffe875; } .hue { fill: #ffe875; stroke: #ffe875; } ' + commonStyles + ' }'); }
+        else if (keyword === '1') { svg.style('.color { fill: #ffd378; stroke: #ffd378; } .hue { fill: #ffd378; stroke: #ffd378; } ' + commonStyles + ' }'); }
+        else if (keyword === '2') { svg.style('.color { fill: #ffc187; stroke: #ffc187; } .hue { fill: #ffc187; stroke: #ffc187; } ' + commonStyles + ' }'); }
+        else if (keyword === '3') { svg.style('.color { fill: #ffb7ae; stroke: #ffb7ae; } .hue { fill: #ffb7ae; stroke: #ffb7ae; } ' + commonStyles + ' }'); }
+        else if (keyword === '4') { svg.style('.color { fill: #ff9c76; stroke: #ff9c76; } .hue { fill: #ff9c76; stroke: #ff9c76; } ' + commonStyles + ' }'); }
+        else if (keyword === '5') { svg.style('.color { fill: #eac4be; stroke: #eac4be; } .hue { fill: #eac4be; stroke: #eac4be; } ' + commonStyles + ' }'); }
         
-        else if (keyword === '6') { svg.style('.color { fill: #f4c3cb; stroke: #f4c3cb; } .hue { fill: #f4c3cb; stroke: #f4c3cb; ' + commonStyles + ' }'); }
-        else if (keyword === '7') { svg.style('.color { fill: #ffabc2; stroke: #ffabc2; } .hue { fill: #ffabc2; stroke: #ffabc2; ' + commonStyles + ' }'); }
-        else if (keyword === '8') { svg.style('.color { fill: #e4bdd0; stroke: #e4bdd0; } .hue { fill: #e4bdd0; stroke: #e4bdd0; ' + commonStyles + ' }'); }
-        else if (keyword === '9') { svg.style('.color { fill: #cf8fa4; stroke: #cf8fa4; } .hue { fill: #cf8fa4; stroke: #cf8fa4; ' + commonStyles + ' }'); }
-        else if (keyword === 'A') { svg.style('.color { fill: #dcb6ba; stroke: #dcb6ba; } .hue { fill: #dcb6ba; stroke: #dcb6ba; ' + commonStyles + ' }'); }
-        else if (keyword === 'B') { svg.style('.color { fill: #eebae9; stroke: #eebae9; } .hue { fill: #eebae9; stroke: #eebae9; ' + commonStyles + ' }'); }
+        else if (keyword === '6') { svg.style('.color { fill: #f4c3cb; stroke: #f4c3cb; } .hue { fill: #f4c3cb; stroke: #f4c3cb; } ' + commonStyles + ' }'); }
+        else if (keyword === '7') { svg.style('.color { fill: #ffabc2; stroke: #ffabc2; } .hue { fill: #ffabc2; stroke: #ffabc2; } ' + commonStyles + ' }'); }
+        else if (keyword === '8') { svg.style('.color { fill: #e4bdd0; stroke: #e4bdd0; } .hue { fill: #e4bdd0; stroke: #e4bdd0; } ' + commonStyles + ' }'); }
+        else if (keyword === '9') { svg.style('.color { fill: #cf8fa4; stroke: #cf8fa4; } .hue { fill: #cf8fa4; stroke: #cf8fa4; } ' + commonStyles + ' }'); }
+        else if (keyword === 'A') { svg.style('.color { fill: #dcb6ba; stroke: #dcb6ba; } .hue { fill: #dcb6ba; stroke: #dcb6ba; } ' + commonStyles + ' }'); }
+        else if (keyword === 'B') { svg.style('.color { fill: #eebae9; stroke: #eebae9; } .hue { fill: #eebae9; stroke: #eebae9; } ' + commonStyles + ' }'); }
         
-        else if (keyword === 'C') { svg.style('.color { fill: #e0cfd6; stroke: #e0cfd6; } .hue { fill: #e0cfd6; stroke: #e0cfd6; ' + commonStyles + ' }'); }
-        else if (keyword === 'D') { svg.style('.color { fill: #cda2d9; stroke: #cda2d9; } .hue { fill: #cda2d9; stroke: #cda2d9; ' + commonStyles + ' }'); }
-        else if (keyword === 'E') { svg.style('.color { fill: #c9b7e8; stroke: #c9b7e8; } .hue { fill: #c9b7e8; stroke: #c9b7e8; ' + commonStyles + ' }'); }
-        else if (keyword === 'F') { svg.style('.color { fill: #aca8c7; stroke: #aca8c7; } .hue { fill: #aca8c7; stroke: #aca8c7; ' + commonStyles + ' }'); }
-        else if (keyword === 'G') { svg.style('.color { fill: #a7b2e8; stroke: #a7b2e8; } .hue { fill: #a7b2e8; stroke: #a7b2e8; ' + commonStyles + ' }'); }
-        else if (keyword === 'H') { svg.style('.color { fill: #7993a5; stroke: #7993a5; } .hue { fill: #7993a5; stroke: #7993a5; ' + commonStyles + ' }'); }
+        else if (keyword === 'C') { svg.style('.color { fill: #e0cfd6; stroke: #e0cfd6; } .hue { fill: #e0cfd6; stroke: #e0cfd6; } ' + commonStyles + ' }'); }
+        else if (keyword === 'D') { svg.style('.color { fill: #cda2d9; stroke: #cda2d9; } .hue { fill: #cda2d9; stroke: #cda2d9; } ' + commonStyles + ' }'); }
+        else if (keyword === 'E') { svg.style('.color { fill: #c9b7e8; stroke: #c9b7e8; } .hue { fill: #c9b7e8; stroke: #c9b7e8; } ' + commonStyles + ' }'); }
+        else if (keyword === 'F') { svg.style('.color { fill: #aca8c7; stroke: #aca8c7; } .hue { fill: #aca8c7; stroke: #aca8c7; } ' + commonStyles + ' }'); }
+        else if (keyword === 'G') { svg.style('.color { fill: #a7b2e8; stroke: #a7b2e8; } .hue { fill: #a7b2e8; stroke: #a7b2e8; } ' + commonStyles + ' }'); }
+        else if (keyword === 'H') { svg.style('.color { fill: #7993a5; stroke: #7993a5; } .hue { fill: #7993a5; stroke: #7993a5; } ' + commonStyles + ' }'); }
             
-        else if (keyword === 'I') { svg.style('.color { fill: #afc3dc; stroke: #afc3dc; } .hue { fill: #afc3dc; stroke: #afc3dc; ' + commonStyles + ' }'); }
-        else if (keyword === 'J') { svg.style('.color { fill: #a9c8f4; stroke: #a9c8f4; } .hue { fill: #a9c8f4; stroke: #a9c8f4; ' + commonStyles + ' }'); }
-        else if (keyword === 'K') { svg.style('.color { fill: #a7d4ee; stroke: #a7d4ee; } .hue { fill: #a7d4ee; stroke: #a7d4ee; ' + commonStyles + ' }'); }
-        else if (keyword === 'L') { svg.style('.color { fill: #8298bd; stroke: #8298bd; } .hue { fill: #8298bd; stroke: #8298bd; ' + commonStyles + ' }'); }
-        else if (keyword === 'M') { svg.style('.color { fill: #67a5bf; stroke: #67a5bf; } .hue { fill: #67a5bf; stroke: #67a5bf; ' + commonStyles + ' }'); }
-        else if (keyword === 'N') { svg.style('.color { fill: #6eb2bd; stroke: #6eb2bd; } .hue { fill: #6eb2bd; stroke: #6eb2bd; ' + commonStyles + ' }'); }
+        else if (keyword === 'I') { svg.style('.color { fill: #afc3dc; stroke: #afc3dc; } .hue { fill: #afc3dc; stroke: #afc3dc; } ' + commonStyles + ' }'); }
+        else if (keyword === 'J') { svg.style('.color { fill: #a9c8f4; stroke: #a9c8f4; } .hue { fill: #a9c8f4; stroke: #a9c8f4; } ' + commonStyles + ' }'); }
+        else if (keyword === 'K') { svg.style('.color { fill: #a7d4ee; stroke: #a7d4ee; } .hue { fill: #a7d4ee; stroke: #a7d4ee; } ' + commonStyles + ' }'); }
+        else if (keyword === 'L') { svg.style('.color { fill: #8298bd; stroke: #8298bd; } .hue { fill: #8298bd; stroke: #8298bd; } ' + commonStyles + ' }'); }
+        else if (keyword === 'M') { svg.style('.color { fill: #67a5bf; stroke: #67a5bf; } .hue { fill: #67a5bf; stroke: #67a5bf; } ' + commonStyles + ' }'); }
+        else if (keyword === 'N') { svg.style('.color { fill: #6eb2bd; stroke: #6eb2bd; } .hue { fill: #6eb2bd; stroke: #6eb2bd; } ' + commonStyles + ' }'); }
         
-        else if (keyword === 'O') { svg.style('.color { fill: #6bd9de; stroke: #6bd9de; } .hue { fill: #6bd9de; stroke: #6bd9de; ' + commonStyles + ' }'); }
-        else if (keyword === 'P') { svg.style('.color { fill: #94b7bc; stroke: #94b7bc; } .hue { fill: #94b7bc; stroke: #94b7bc; ' + commonStyles + ' }'); }
-        else if (keyword === 'Q') { svg.style('.color { fill: #6aceb9; stroke: #6aceb9; } .hue { fill: #6aceb9; stroke: #6aceb9; ' + commonStyles + ' }'); }
-        else if (keyword === 'R') { svg.style('.color { fill: #a9bab7; stroke: #a9bab7; } .hue { fill: #a9bab7; stroke: #a9bab7; ' + commonStyles + ' }'); }
-        else if (keyword === 'S') { svg.style('.color { fill: #6bac92; stroke: #6bac92; } .hue { fill: #6bac92; stroke: #6bac92; ' + commonStyles + ' }'); }
-        else if (keyword === 'T') { svg.style('.color { fill: #a7d9bc; stroke: #a7d9bc; } .hue { fill: #a7d9bc; stroke: #a7d9bc; ' + commonStyles + ' }'); }
+        else if (keyword === 'O') { svg.style('.color { fill: #6bd9de; stroke: #6bd9de; } .hue { fill: #6bd9de; stroke: #6bd9de; } ' + commonStyles + ' }'); }
+        else if (keyword === 'P') { svg.style('.color { fill: #94b7bc; stroke: #94b7bc; } .hue { fill: #94b7bc; stroke: #94b7bc; } ' + commonStyles + ' }'); }
+        else if (keyword === 'Q') { svg.style('.color { fill: #6aceb9; stroke: #6aceb9; } .hue { fill: #6aceb9; stroke: #6aceb9; } ' + commonStyles + ' }'); }
+        else if (keyword === 'R') { svg.style('.color { fill: #a9bab7; stroke: #a9bab7; } .hue { fill: #a9bab7; stroke: #a9bab7; } ' + commonStyles + ' }'); }
+        else if (keyword === 'S') { svg.style('.color { fill: #6bac92; stroke: #6bac92; } .hue { fill: #6bac92; stroke: #6bac92; } ' + commonStyles + ' }'); }
+        else if (keyword === 'T') { svg.style('.color { fill: #a7d9bc; stroke: #a7d9bc; } .hue { fill: #a7d9bc; stroke: #a7d9bc; } ' + commonStyles + ' }'); }
             
-        else if (keyword === 'U') { svg.style('.color { fill: #b7e394; stroke: #b7e394; } .hue { fill: #b7e394; stroke: #b7e394; ' + commonStyles + ' }'); }
-        else if (keyword === 'V') { svg.style('.color { fill: #c7ca9c; stroke: #c7ca9c; } .hue { fill: #c7ca9c; stroke: #c7ca9c; ' + commonStyles + ' }'); }
-        else if (keyword === 'W') { svg.style('.color { fill: #d4e458; stroke: #d4e458; } .hue { fill: #d4e458; stroke: #d4e458; ' + commonStyles + ' }'); }
-        else if (keyword === 'X') { svg.style('.color { fill: #ebe081; stroke: #ebe081; } .hue { fill: #ebe081; stroke: #ebe081; ' + commonStyles + ' }'); }
-        else if (keyword === 'Y') { svg.style('.color { fill: #cabe96; stroke: #cabe96; } .hue { fill: #cabe96; stroke: #cabe96; ' + commonStyles + ' }'); }
-        else if (keyword === 'Z') { svg.style('.color { fill: #dfa880; stroke: #dfa880; } .hue { fill: #dfa880; stroke: #dfa880; ' + commonStyles + ' }'); }
+        else if (keyword === 'U') { svg.style('.color { fill: #b7e394; stroke: #b7e394; } .hue { fill: #b7e394; stroke: #b7e394; } ' + commonStyles + ' }'); }
+        else if (keyword === 'V') { svg.style('.color { fill: #c7ca9c; stroke: #c7ca9c; } .hue { fill: #c7ca9c; stroke: #c7ca9c; } ' + commonStyles + ' }'); }
+        else if (keyword === 'W') { svg.style('.color { fill: #d4e458; stroke: #d4e458; } .hue { fill: #d4e458; stroke: #d4e458; } ' + commonStyles + ' }'); }
+        else if (keyword === 'X') { svg.style('.color { fill: #ebe081; stroke: #ebe081; } .hue { fill: #ebe081; stroke: #ebe081; } ' + commonStyles + ' }'); }
+        else if (keyword === 'Y') { svg.style('.color { fill: #cabe96; stroke: #cabe96; } .hue { fill: #cabe96; stroke: #cabe96; } ' + commonStyles + ' }'); }
+        else if (keyword === 'Z') { svg.style('.color { fill: #dfa880; stroke: #dfa880; } .hue { fill: #dfa880; stroke: #dfa880; } ' + commonStyles + ' }'); }
             
         else {
             $('body').append(
