@@ -20,7 +20,7 @@ jQuery(document).ready(function ($) {
     
     //
     var keyword = getUrlParameter('keyword').slice(0,1);
-    var commonStyles = '.hue { opacity: .4; stroke-opacity: 0; } .white { fill: #ffffff; stroke: #ffffff; }';
+    var commonStyles = '.hue { opacity: .4; stroke-opacity: 0; } .white { fill: #ffffff; stroke: #ffffff; } * { stroke-width: 0; }';
     
     //
     function addColor(svg) {
