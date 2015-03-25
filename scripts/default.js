@@ -19,7 +19,7 @@ jQuery(document).ready(function ($) {
     }
     
     //
-    var download = getUrlParameter('download')
+    //var download = getUrlParameter('download')
     
     //
     var keyword = getUrlParameter('keyword').slice(0,1);
@@ -142,5 +142,121 @@ jQuery(document).ready(function ($) {
     ////////////////////////////////////////////////////////////////
     ////////////////////////////////////////////////////////////////
     ////////////////////////////////////////////////////////////////
+
+});
+
+$(window).load(function() {
+    
+    $('body'). removeClass('hidden').addClass('fadeIn');
+    
+    //
+    //
+    var svgObjectId = $('svg').attr('id');
+    document.title = svgObjectId.slice(7);
+    $('body').addClass( svgObjectId );
+    
+    // Get url parameter jquery
+    // http://stackoverflow.com/questions/19491336/get-url-parameter-jquery
+    function getUrlParameter(sParam) {
+        var sPageURL = window.location.search.substring(1);
+        var sURLVariables = sPageURL.split('&');
+        for (var i = 0; i < sURLVariables.length; i++) {
+        var sParameterName = sURLVariables[i].split('=');
+            if (sParameterName[0] == sParam) {
+                return sParameterName[1];
+            }
+        }
+    }
+    
+    //
+    var keyword = getUrlParameter('keyword').slice(0,1);
+    
+    //
+    var objectInfo0 = 'Pantone U: 2003<br>Pantone C: 2003<br>CMYK U: 0/2/70/0<br>CMYK C: 0/1/70/0<br>RGB: 255/232/117<br>HEX: ffe875';
+    var objectInfo1 = 'Pantone U: 134<br>Pantone C: 7403<br>CMYK U: 0/13/58/0<br>CMYK C: 1/11/58/2<br>RGB: 255/211/120<br>HEX: ffd378';
+    var objectInfo2 = 'Pantone U: 2016<br>Pantone C: 149<br>CMYK U: 0/24/50/0<br>CMYK C: 0/24/51/0<br>RGB: 255/193/135<br>HEX: ffc187';
+    var objectInfo3 = 'Pantone U: 169<br>Pantone C: 7415<br>CMYK U: 0/29/23/0<br>CMYK C: 0/28/26/1<br>RGB: 255/183/174<br>HEX: ffb7ae';
+    var objectInfo4 = 'Pantone U: 163<br>Pantone C: 1565<br>CMYK U:0/38/54/0<br>CMYK C: 0/39/51/0<br>RGB: 255/156/118<br>HEX: ff9c76';
+    var objectInfo5 = 'Pantone U: 7605<br>Pantone C: 503<br>CMYK U: 0/18/10/0<br>CMYK C: 0/20/6/1<br>RGB: 234/196/190<br>HEX: eac4be';
+    
+    var objectInfo6 = 'Pantone U: 196<br>Pantone C: 502<br>CMYK U: 0/25/10/0<br>CMYK C: 0/26/9/1<br>RGB: 244/195/203<br>HEX: f4c3cb';
+    var objectInfo7 = 'Pantone U: 189<br>Pantone C: 707<br>CMYK U: 0/38/7/0<br>CMYK C: 0/36/8/0<br>RGB: 255/171/194<br>HEX: ffabc2';
+    var objectInfo8 = 'Pantone U: 685<br>Pantone C: 517<br>CMYK U: 0/24/0/2<br>CMYK C: 2/25/0/0<br>RGB: 228/189/208<br>HEX: e4bdd0';
+    var objectInfo9 = 'Pantone U: 507<br>Pantone C: 507<br>CMYK U:13/51/16<br>CMYK C: 4/51/7/6<br>RGB: 207/143/164<br>HEX: cf8fa4';
+    var objectInfoA = 'Pantone U: 5025<br>Pantone C: 692<br>CMYK U: 4/22/16/4<br>CMYK C: 2/26/7/2<br>RGB: 220/182/186<br>HEX: dcb6ba';
+    var objectInfoB = 'Pantone U: 250<br>Pantone C: 250<br>CMYK U: 6/29/0/0<br>CMYK C: 7/28/0/0<br>RGB: 238/186/233<br>HEX: eebae9';
+    
+    var objectInfoC = 'Pantone U: 5245<br>Pantone C: 2050<br>CMYK U: 2/10/3/4<br>CMYK C: 3/15/3/0<br>RGB: 224/207/214<br>HEX: e0cfd6';
+    var objectInfoD = 'Pantone U: 2563<br>Pantone C: 2562<br>CMYK U: 18/34/0/0<br>CMYK C: 19/35/0/0<br>RGB: 205/162/217<br>HEX: cda2d9';
+    var objectInfoE = 'Pantone U: 2635<br>Pantone C: 5305<br>CMYK U: 20/24/0/0<br>CMYK C: 18/15/2/6<br>RGB: 201/183/232<br>HEX: c9b7e8';
+    var objectInfoF = 'Pantone U: 7445<br>Pantone C: 270<br>CMYK U: 26/23/0/3<br>CMYK C: 29/25/0/0<br>RGB: 172/168/199<br>HEX: aca8c7';
+    var objectInfoG = 'Pantone U: 2113<br>Pantone C: 7681<br>CMYK U: 41/24/0/0<br>CMYK C: 42/23/2/0<br>RGB: 167/178/232<br>HEX: a7b2e8';
+    var objectInfoH = 'Pantone U: 5425<br>Pantone C: 5425<br>CMYK U: 54/28/22/2<br>CMYK C: 45/16/9/24<br>RGB: 121/147/165<br>HEX: 7993a5';
+    
+    var objectInfoI = 'Pantone U: 651<br>Pantone C: 277<br>CMYK U: 34/11/1/0<br>CMYK C: 35/9/0/0<br>RGB: 175/195/220<br>HEX: afc3dc';
+    var objectInfoJ = 'Pantone U: 2717<br>Pantone C: 651<br>CMYK U: 33/9/0/0<br>CMYK C: 38/14/1/2<br>RGB: 169/200/244<br>HEX: a9c8f4';
+    var objectInfoK = 'Pantone U: 290<br>Pantone C: 2975<br>CMYK U: 32/1/2/0<br>CMYK C: 34/0/5/0<br>RGB: 167/212/238<br>HEX: a7d4ee';
+    var objectInfoL = 'Pantone U: 7695<br>Pantone C: 7695<br>CMYK U: 38/0/0/20<br>CMYK C: 43/9/8/8<br>RGB: 130/168/189<br>HEX: 8298bd';
+    var objectInfoM = 'Pantone U: 7458<br>Pantone C: 7709<br>CMYK U: 65/7/12/2<br>CMYK C: 62/0/8/6<br>RGB: 103/165/191<br>HEX: 67a5bf';
+    var objectInfoN = 'Pantone U: 7709<br>Pantone C: 325<br>CMYK U: 54/0/16/4<br>CMYK C: 53/0/23/0<br>RGB: 110/178/189<br>HEX: 6eb2bd';
+    
+    var objectInfoO = 'Pantone U: 318<br>Pantone C: 3248<br>CMYK U: 48/0/18/0<br>CMYK C: 48/0/22/0<br>RGB: 107/217/222<br>HEX: 6bd9de';
+    var objectInfoP = 'Pantone U: 5503<br>Pantone C: 7471<br>CMYK U: 36/4/14/0<br>CMYK C: 37/0/17/0<br>RGB: 148/183/188<br>HEX: 94b7bc';
+    var objectInfoQ = 'Pantone U: 3248<br>Pantone C: 333<br>CMYK U: 49/0/28/0<br>CMYK C: 49/0/28/0<br>RGB: 106/206/185<br>HEX: 6aceb9';
+    var objectInfoR = 'Pantone U: 5517<br>Pantone C: 2176<br>CMYK U: 33/12/22/0<br>CMYK C: 33/12/17/0<br>RGB: 169/186/183<br>HEX: a9bab7';
+    var objectInfoS = 'Pantone U: 7723<br>Pantone C: 570<br>CMYK U: 54/0/38/4<br>CMYK C: 57/0/36/0<br>RGB: 107/172/146<br>HEX: 6bac92';
+    var objectInfoT = 'Pantone U: 2246<br>Pantone C: 352<br>CMYK U: 37/0/31/0<br>CMYK C: 37/0/31/0<br>RGB: 167/217/188<br>HEX: a7d9bc';
+    
+    var objectInfoU = 'Pantone U: 7486<br>Pantone C: 366<br>CMYK U: 26/0/40/0<br>CMYK C: 31/0/51/0<br>RGB: 183/227/148<br>HEX: b7e394';
+    var objectInfoV = 'Pantone U: 5797<br>Pantone C: 5875<br>CMYK U: 15/6/32/1<br>CMYK C: 9/4/31/5<br>RGB: 199/202/156<br>HEX: c7ca9c';
+    var objectInfoW = 'Pantone U: 380<br>Pantone C: 379<br>CMYK U: 15/0/63/0<br>CMYK C: 13/0/61/0<br>RGB: 212/228/88<br>HEX: d4e458';
+    var objectInfoX = 'Pantone U: 609<br>Pantone C: 461<br>CMYK U: 2/0/47/3<br>CMYK C: 2/1/45/2<br>RGB: 235/224/129<br>HEX: ebe081';
+    var objectInfoY = 'Pantone U: 4535<br>Pantone C: 5865<br>CMYK U: 4/6/32/10<br>CMYK C: 9/3/37/10<br>RGB: 202/190/150<br>HEX: cabe96';
+    var objectInfoZ = 'Pantone U: 721<br>Pantone C: 473<br>CMYK U: 4/20/34/0<br>CMYK C: 0/32/42/0<br>RGB: 223/168/123<br>HEX: dfa880';
+    
+    //
+         if (keyword === '0') { $('.info').append( objectInfo0 ); }
+    else if (keyword === '1') { $('.info').append( objectInfo1 ); }
+    else if (keyword === '2') { $('.info').append( objectInfo2 ); }
+    else if (keyword === '3') { $('.info').append( objectInfo3 ); }
+    else if (keyword === '4') { $('.info').append( objectInfo4 ); }
+    else if (keyword === '5') { $('.info').append( objectInfo5 ); }
+
+    else if (keyword === '6') { $('.info').append( objectInfo6 ); }
+    else if (keyword === '7') { $('.info').append( objectInfo7 ); }
+    else if (keyword === '8') { $('.info').append( objectInfo8 ); }
+    else if (keyword === '9') { $('.info').append( objectInfo9 ); }
+    else if (keyword === 'A') { $('.info').append( objectInfoA ); }
+    else if (keyword === 'B') { $('.info').append( objectInfoB ); }
+
+    else if (keyword === 'C') { $('.info').append( objectInfoC ); }
+    else if (keyword === 'D') { $('.info').append( objectInfoD ); }
+    else if (keyword === 'E') { $('.info').append( objectInfoE ); }
+    else if (keyword === 'F') { $('.info').append( objectInfoF ); }
+    else if (keyword === 'G') { $('.info').append( objectInfoG ); }
+    else if (keyword === 'H') { $('.info').append( objectInfoH ); }
+
+    else if (keyword === 'I') { $('.info').append( objectInfoI ); }
+    else if (keyword === 'J') { $('.info').append( objectInfoJ ); }
+    else if (keyword === 'K') { $('.info').append( objectInfoK ); }
+    else if (keyword === 'L') { $('.info').append( objectInfoL ); }
+    else if (keyword === 'M') { $('.info').append( objectInfoM ); }
+    else if (keyword === 'N') { $('.info').append( objectInfoN ); }
+
+    else if (keyword === 'O') { $('.info').append( objectInfoO ); }
+    else if (keyword === 'P') { $('.info').append( objectInfoP ); }
+    else if (keyword === 'Q') { $('.info').append( objectInfoQ ); }
+    else if (keyword === 'R') { $('.info').append( objectInfoR ); }
+    else if (keyword === 'S') { $('.info').append( objectInfoS ); }
+    else if (keyword === 'T') { $('.info').append( objectInfoT ); }
+
+    else if (keyword === 'U') { $('.info').append( objectInfoU ); }
+    else if (keyword === 'V') { $('.info').append( objectInfoV ); }
+    else if (keyword === 'W') { $('.info').append( objectInfoW ); }
+    else if (keyword === 'X') { $('.info').append( objectInfoX ); }
+    else if (keyword === 'Y') { $('.info').append( objectInfoY ); }
+    else if (keyword === 'Z') { $('.info').append( objectInfoZ ); }
+    
+    else { }
 
 });
