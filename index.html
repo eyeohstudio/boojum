@@ -11,7 +11,8 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
-
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/default.css">
         
     </head>
     <body class="hidden">
@@ -25,6 +26,21 @@
         <script>window.jQuery || document.write('<script src="scripts/jquery-1.11.2.min.js"><\/script>')</script>
         <script src="scripts/jquery.svg.min.js"></script>
         <script src="scripts/default.js"></script>
+        <script>
+          $(window).load(function() {
+
+            //
+            var svgObjectId = $('svg').attr('id');
+            document.title = svgObjectId.slice(7);
+            $('body').addClass( svgObjectId );
+
+            $('head').append('<link rel="stylesheet" type="text/css" href="styles/normalize.css">');
+            $('head').append('<link rel="stylesheet" type="text/css" href="styles/default.css">');
+
+            $('body'). removeClass('hidden').addClass('fadeIn');
+
+          });
+      </script>
 
         <!-- Google Analytics -->
         <script>

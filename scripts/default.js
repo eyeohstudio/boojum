@@ -90,7 +90,7 @@ jQuery(document).ready(function ($) {
   ////////////////////////////////////////////////////////////////
   ////////////////////////////////////////////////////////////////
   
-    //
+  //
   var objectInfo0 = 'Pantone U: 2003<br>Pantone C: 2003<br>CMYK U: 0/2/70/0<br>CMYK C: 0/1/70/0<br>RGB: 255/232/117<br>HEX: ffe875';
   var objectInfo1 = 'Pantone U: 134<br>Pantone C: 7403<br>CMYK U: 0/13/58/0<br>CMYK C: 1/11/58/2<br>RGB: 255/211/120<br>HEX: ffd378';
   var objectInfo2 = 'Pantone U: 2016<br>Pantone C: 149<br>CMYK U: 0/24/50/0<br>CMYK C: 0/24/51/0<br>RGB: 255/193/135<br>HEX: ffc187';
@@ -193,88 +193,5 @@ jQuery(document).ready(function ($) {
   ////////////////////////////////////////////////////////////////
   ////////////////////////////////////////////////////////////////
   ////////////////////////////////////////////////////////////////
-  
-  //
-  
 
-});
-
-$(window).load(function() {
-  
-  //
-  var svgObjectId = $('svg').attr('id');
-  document.title = svgObjectId.slice(7);
-  $('body').addClass( svgObjectId );
-  
-  
-  $('head').append('<link rel="stylesheet" type="text/css" href="styles/normalize.css">');
-  $('head').append('<link rel="stylesheet" type="text/css" href="styles/default.css">');
-
-  $('body'). removeClass('hidden').addClass('fadeIn');
-    
-    /*
-    // Get url parameter jquery
-    // http://stackoverflow.com/questions/19491336/get-url-parameter-jquery
-    function getUrlParameter(sParam) {
-        var sPageURL = window.location.search.substring(1);
-        var sURLVariables = sPageURL.split('&');
-        for (var i = 0; i < sURLVariables.length; i++) {
-        var sParameterName = sURLVariables[i].split('=');
-            if (sParameterName[0] == sParam) {
-                return sParameterName[1];
-            }
-        }
-    }
-    
-    //
-    var keyword = getUrlParameter('keyword').slice(0,1);
-    
-    
-    
-    //
-         if (keyword === '0') {  }
-    else if (keyword === '1') { $('.info').append( objectInfo1 ); }
-    else if (keyword === '2') { $('.info').append( objectInfo2 ); }
-    else if (keyword === '3') { $('.info').append( objectInfo3 ); }
-    else if (keyword === '4') { $('.info').append( objectInfo4 ); }
-    else if (keyword === '5') { $('.info').append( objectInfo5 ); }
-
-    else if (keyword === '6') { $('.info').append( objectInfo6 ); }
-    else if (keyword === '7') { $('.info').append( objectInfo7 ); }
-    else if (keyword === '8') { $('.info').append( objectInfo8 ); }
-    else if (keyword === '9') { $('.info').append( objectInfo9 ); }
-    else if (keyword === 'A') { $('.info').append( objectInfoA ); }
-    else if (keyword === 'B') { $('.info').append( objectInfoB ); }
-
-    else if (keyword === 'C') { $('.info').append( objectInfoC ); }
-    else if (keyword === 'D') { $('.info').append( objectInfoD ); }
-    else if (keyword === 'E') { $('.info').append( objectInfoE ); }
-    else if (keyword === 'F') { $('.info').append( objectInfoF ); }
-    else if (keyword === 'G') { $('.info').append( objectInfoG ); }
-    else if (keyword === 'H') { $('.info').append( objectInfoH ); }
-
-    else if (keyword === 'I') { $('.info').append( objectInfoI ); }
-    else if (keyword === 'J') { $('.info').append( objectInfoJ ); }
-    else if (keyword === 'K') { $('.info').append( objectInfoK ); }
-    else if (keyword === 'L') { $('.info').append( objectInfoL ); }
-    else if (keyword === 'M') { $('.info').append( objectInfoM ); }
-    else if (keyword === 'N') { $('.info').append( objectInfoN ); }
-
-    else if (keyword === 'O') { $('.info').append( objectInfoO ); }
-    else if (keyword === 'P') { $('.info').append( objectInfoP ); }
-    else if (keyword === 'Q') { $('.info').append( objectInfoQ ); }
-    else if (keyword === 'R') { $('.info').append( objectInfoR ); }
-    else if (keyword === 'S') { $('.info').append( objectInfoS ); }
-    else if (keyword === 'T') { $('.info').append( objectInfoT ); }
-
-    else if (keyword === 'U') { $('.info').append( objectInfoU ); }
-    else if (keyword === 'V') { $('.info').append( objectInfoV ); }
-    else if (keyword === 'W') { $('.info').append( objectInfoW ); }
-    else if (keyword === 'X') { $('.info').append( objectInfoX ); }
-    else if (keyword === 'Y') { $('.info').append( objectInfoY ); }
-    else if (keyword === 'Z') { $('.info').append( objectInfoZ ); }
-    
-    else { $('.info').append( 'null' ); }
-
-*/
 });
