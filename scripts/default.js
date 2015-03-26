@@ -205,11 +205,8 @@ $(window).load(function() {
   var svgObjectId = $('svg').attr('id');
   document.title = svgObjectId.slice(7);
   $('body').addClass( svgObjectId );
-  
-  
-  $('head').append('<link rel="stylesheet" type="text/css" href="styles/normalize.css">');
-  $('head').append('<link rel="stylesheet" type="text/css" href="styles/default.css">');
 
+  //
   $('body'). removeClass('hidden').addClass('fadeIn');
     
     /*
