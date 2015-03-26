@@ -15,7 +15,7 @@
         <link rel="stylesheet" href="styles/default.css">
         
     </head>
-    <body class="hidden">
+    <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -34,10 +34,7 @@
             document.title = svgObjectId.slice(7);
             $('body').addClass( svgObjectId );
 
-            $('head').append('<link rel="stylesheet" type="text/css" href="styles/normalize.css">');
-            $('head').append('<link rel="stylesheet" type="text/css" href="styles/default.css">');
-
-            $('body'). removeClass('hidden').addClass('fadeIn');
+            $('html'). removeClass('hidden').addClass('fadeIn');
 
           });
       </script>

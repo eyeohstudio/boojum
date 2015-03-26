@@ -57,6 +57,9 @@
   fill: #ffffff;
   stroke: #ffffff;
 }
+.hidden {
+  display: none;
+}
 html {
   background-color: #ffffff;
   font-size: 62.5%;
