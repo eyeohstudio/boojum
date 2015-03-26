@@ -1,4 +1,3 @@
-$('html').addClass('hidden');
 jQuery(document).ready(function ($) {
     
   ////////////////////////////////////////////////////////////////
