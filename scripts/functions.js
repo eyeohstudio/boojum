@@ -1,19 +1,22 @@
 jQuery(document).ready(function ($) {
-//$(window).load(function() {
 
   ////////////////////////////////////////////////////////////////
   ////////////////////////////////////////////////////////////////
   ////////////////////////////////////////////////////////////////
   ////////////////////////////////////////////////////////////////
 
-  //
-  var svgObjectId = $('svg').attr('id');
-  
-  //
-  document.title = svgObjectId.slice(7);
-  $('body').addClass( svgObjectId );
-
-  $('body'). removeClass('hidden').addClass('fadeIn');
+  // Get url parameter jquery
+  // http://stackoverflow.com/questions/19491336/get-url-parameter-jquery
+  function getUrlParameter(sParam) {
+    var sPageURL = window.location.search.substring(1);
+    var sURLVariables = sPageURL.split('&');
+    for (var i = 0; i < sURLVariables.length; i++) {
+    var sParameterName = sURLVariables[i].split('=');
+      if (sParameterName[0] == sParam) {
+        return sParameterName[1];
+      }
+    }
+  }
 
   ////////////////////////////////////////////////////////////////
   ////////////////////////////////////////////////////////////////
