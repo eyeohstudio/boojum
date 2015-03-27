@@ -207,7 +207,7 @@ $(window).load(function() {
   var svgObjectId = $('svg').attr('id');
 
   //
-  //document.title = svgObjectId.slice(7);
+  document.title = svgObjectId.slice(7);
   $('body').addClass( svgObjectId );
 
   ////////////////////////////////////////////////////////////////
