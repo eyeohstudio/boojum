@@ -1,48 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic);
-.libre-baskerville-bold {
-  font-family: 'Libre Baskerville', serif;
-  font-style: normal;
-  font-weight: 700;
-}
-.libre-baskerville-italic {
-  font-family: 'Libre Baskerville', serif;
-  font-style: italic;
-  font-weight: 400;
-}
-.libre-baskerville-normal {
-  font-family: 'Libre Baskerville', serif;
-  font-style: normal;
-  font-weight: 400;
-}
-.font-family-base {
-  font-family: 'Libre Baskerville', serif;
-}
-.font-family-monospace {
-  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
-}
-.font-family-sans-serif {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-.font-family-serif {
-  font-family: 'Libre Baskerville', serif;
-}
-.bold {
-  font-style: normal;
-  font-weight: 700;
-}
-.normal {
-  font-style: normal;
-  font-weight: 400;
-}
-.oblique {
-  font-style: oblique;
-  font-weight: normal;
-}
-* {
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-stroke: 1px transparent;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.01);
-}
+@import url('fonts.css');
 .color {
   fill: #333333;
   stroke: #333333;
@@ -59,6 +15,22 @@
 }
 .hidden {
   display: none;
+}
+.font-family-bold {
+  font-family: 'BrixSans';
+  font-weight: bold;
+  font-style: normal;
+}
+.font-family-normal {
+  font-family: 'BrixSlab';
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke: 1px transparent;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.01);
 }
 html {
   background-color: #ffffff;
@@ -212,11 +184,13 @@ html body.object-1221-1231 .info {
   left: 0;
 }
 html body {
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'BrixSlab';
+  font-weight: normal;
   font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  font-size: 1.6rem;
+  font-size: 19px;
+  font-size: 1.9rem;
+  line-height: 36px;
+  line-height: 3.6rem;
   background-color: #ffffff;
   color: #000000;
   height: 100%;
@@ -225,13 +199,11 @@ html body {
 }
 html body .info {
   border: 1px solid;
-  font-size: 68%;
-  height: 120px;
-  line-height: 2em;
+  height: 210px;
   margin: 90px;
   padding: 30px;
   position: absolute;
-  width: 120px;
+  width: 210px;
 }
 html body #svgObject svg {
   height: 360px;
