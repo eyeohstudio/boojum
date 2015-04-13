@@ -23,7 +23,7 @@ jQuery(document).ready(function ($) {
   
   //
   var dateNow = new Date();
-  var dateToday = ( '0' + (dateNow.getMonth()+1) ).slice( -2 ) + ( '0' + (dateNow.getDate()) );
+  var dateToday = ( '0' + (dateNow.getMonth()+1) ).slice( -2 ) + ( '0' + dateNow.getDate()).slice(-2);
   var dateCurrent = getUrlParameter('date') || dateToday;
   var date = parseInt(dateCurrent, 10);
   
