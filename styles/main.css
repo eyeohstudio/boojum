@@ -197,22 +197,23 @@ html body {
   position: relative;
   overflow: auto;
 }
-html body .info {
-  border: 1px solid;
-  height: 270px;
-  margin: 90px;
-  padding: 30px;
-  position: absolute;
-  width: 270px;
-}
 html body #svgObject svg {
   height: 360px;
   position: absolute;
   width: 360px;
 }
-html body #svgBase64 .modal-body {
-  font-family: monospace;
-  line-height: 1.8em;
+html body #modal .modal-content {
+  border-radius: 0;
+}
+html body #modal .modal-content .modal-body {
+  color: #000000;
+}
+html body #modal .modal-content .modal-body .color-info {
+  font-size: 1em;
+  line-height: 1.4em;
+}
+html body #modal .modal-content .modal-body .base-64 {
+  line-height: 0;
   word-break: break-all;
 }
 html body #object-0101-0110 {

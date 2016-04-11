@@ -119,27 +119,31 @@ html {
     position: relative;
     overflow: auto;
 
-    .info {
-      border: 1px solid;
-      height: 270px;
-      margin: 90px;
-      padding: 30px;
-      position: absolute;
-      width: 270px;
-    }
-
     #svgObject svg {
       height: 360px;
       position: absolute;
       width: 360px;
     }
 
-    #svgBase64 {
+    #modal {
 
-      .modal-body {
-        font-family: monospace;
-        line-height: 1.8em;
-        word-break: break-all;
+      .modal-content {
+        border-radius: 0;
+
+        .modal-body {
+          color: @black;
+
+
+          .color-info {
+            font-size: 1em;
+            line-height: 1.4em;
+          }
+
+          .base-64 {
+            line-height: 0;
+            word-break: break-all;
+          }
+        }
       }
     }
 
