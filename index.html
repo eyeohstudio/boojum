@@ -48,6 +48,13 @@
       <script src="scripts/bootstrap.min.js"></script>
       <script src="scripts/main2.js"></script>
 
+      <script>
+        var s = new XMLSerializer().serializeToString(document.getElementsByTagName('svg') [0]);
+        var encodedData = window.btoa(s);
+
+        $('#svgBase64 .modal-body').text('data:image/svg+xml;base64,' + encodedData);
+      </script>
+
       <!-- Google Analytics -->
       <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
