@@ -213,7 +213,7 @@ function pageFullyLoaded(e) {
   var s = new XMLSerializer().serializeToString(document.getElementsByTagName('svg') [0]);
   var encodedData = window.btoa(s);
 
-  $('#modal .modal-body .base-64').text('data:text/plain;charset=utf-8;base64,' + encodedData);
+  $('#modal .modal-body .base-64').text('data:image/svg+xml;base64,' + encodedData);
 
   //////////////////////////////////////////////////////////////
   //////////////////////////////////////////////////////////////
